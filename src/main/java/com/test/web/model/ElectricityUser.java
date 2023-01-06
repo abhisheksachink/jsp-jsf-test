@@ -11,7 +11,7 @@ public class ElectricityUser {
 	public ElectricityUser(int meterId, String consName, int currReading, int prevReading, String zone) {
 		super();
 		this.meterId = meterId;
-		ConsName = consName;
+		this.ConsName = consName;
 		this.currReading = currReading;
 		this.prevReading = prevReading;
 		this.zone = zone;
@@ -28,13 +28,13 @@ public class ElectricityUser {
 	public void setConsName(String consName) {
 		ConsName = consName;
 	}
-	public double getCurrReading() {
+	public int getCurrReading() {
 		return currReading;
 	}
 	public void setCurrReading(int currReading) {
 		this.currReading = currReading;
 	}
-	public double getPrevReading() {
+	public int getPrevReading() {
 		return prevReading;
 	}
 	public void setPrevReading(int prevReading) {

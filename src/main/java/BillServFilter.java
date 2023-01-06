@@ -54,15 +54,10 @@ public class BillServFilter extends HttpFilter implements Filter {
 		PrintWriter out =response.getWriter();
 		int meterId = Integer.parseInt(request.getParameter("meterId"));
 		Meter service =new MeterImpl();
-		
-		
-		if(meterId==0) {
-			
-			RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
-			rd.include(request, response);
-				
-		}
-		else if(service.isValidMeter_det(meterId)) {
+
+
+
+		if(service.isValidMeter_det(meterId)) {
 			ConsumerFetchDao dao =new ConsumerFetchDaoImpl();
 			List<ElectricityUser> uList =dao.getUsers();
 			for(ElectricityUser user:uList) {
@@ -72,13 +67,16 @@ public class BillServFilter extends HttpFilter implements Filter {
 					request.setAttribute("currRead", user.getCurrReading());
 					request.setAttribute("prevRead", user.getPrevReading());
 					request.setAttribute("zone", user.getZone());
-					RequestDispatcher rd = request.getRequestDispatcher("welcome2.jsp");
 					chain.doFilter(request, response);
+//					RequestDispatcher rd = request.getRequestDispatcher("welcome2.jsp");
+//					rd.include(request, response);
+//					chain.doFilter(request, response);
 				}
 			}
 
 			
 		}
+		
 	}
 
 	/**

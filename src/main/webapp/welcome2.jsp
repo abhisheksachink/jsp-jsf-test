@@ -14,18 +14,22 @@
 <table id="tables">
 <tr>
 <th>Meter Id</th>
-<th>User Name</th>
-<th>User Name</th>
-<th>User Name</th>
-<th>User Name</th>
+<th>Consumer Name</th>
+<th>Current Reading</th>
+<th>Previous Reading</th>
+<th>Zone</th>
+</tr>
 
 <tr>
 <td>${meterId}</td>
-<td>${meterId)}</td>
+<td>"${UserName}"</td>
+<td>"${currRead}"</td>
+<td>"${prevRead}"</td>
+<td>"${zone}"</td>
 </tr>
 
 
-</tr>
+
 
 </table>
 
