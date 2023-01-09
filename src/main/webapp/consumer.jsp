@@ -4,11 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="header.jsp" %>
 
-<form action="<%=request.getContextPath()%>/ConsumerServlet" method="post">
+<form style="background-color:rgb(84, 228, 17);text-align: center;" action="<%=request.getContextPath()%>/ConsumerServlet" method="post">
 <h3>Enter the Consumer Details</h3>
 <label for="meterID">Meter ID:-</label>
 <input type="text" name="meterId" placeholder="Meter ID" ><br><br>
@@ -26,5 +28,6 @@
 <input id="button1" type="submit" value="Submit Details">
 </form>
 
+<%@include file="footer.jsp" %>
 </body>
 </html>

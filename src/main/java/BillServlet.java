@@ -36,19 +36,19 @@ public class BillServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		List<ElectricityUser> userList = (List<ElectricityUser>)request.getAttribute("userList");
-		request.setAttribute("userList", userList);
-		int meterId=(int) request.getAttribute("meterId");
-		String uName=(String) request.getAttribute("UserName");
-		int currRead=(int)request.getAttribute("currRead");
-		int prevRead=(int) request.getAttribute("prevRead");
-		String zone=(String) request.getAttribute("zone");
-		
-		
-		request.setAttribute("meterId", meterId);
-		request.setAttribute("uName", uName);
-		request.setAttribute("currRead", currRead);
-		request.setAttribute("prevRead", prevRead);
-		request.setAttribute("zone", zone);
+//		request.setAttribute("userList", userList);
+//		int meterId=(int) request.getAttribute("meterId");
+//		String uName=(String) request.getAttribute("UserName");
+//		int currRead=(int)request.getAttribute("currRead");
+//		int prevRead=(int) request.getAttribute("prevRead");
+//		String zone=(String) request.getAttribute("zone");
+//		
+//		
+//		request.setAttribute("meterId", meterId);
+//		request.setAttribute("uName", uName);
+//		request.setAttribute("currRead", currRead);
+//		request.setAttribute("prevRead", prevRead);
+//		request.setAttribute("zone", zone);
 		RequestDispatcher rd = request.getRequestDispatcher("welcome2.jsp");
 		rd.include(request, response);
 		

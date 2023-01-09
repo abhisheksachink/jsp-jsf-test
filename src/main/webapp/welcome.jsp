@@ -7,7 +7,8 @@
 <title>Welcome</title>
 </head>
 <body>
+<%@include file="header.jsp" %>
 <h1>Successfully Upadated Power Unit</h1>
-
+<%@include file="footer.jsp" %>
 </body>
 </html>

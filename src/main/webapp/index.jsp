@@ -6,16 +6,11 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="index.css">
 <title>Electricity</title>
+
 </head>
 <body>
-<header class="header">
-  <a href="#" class="logo">ABPDCL</a>
-  <nav class="nav-items">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+<%@include file="header.jsp" %>
+
 <main>
     <div class="intro">
         <h1>Abhi Power Distribution Company Limited</h1>
@@ -43,13 +38,13 @@
       <div class="about-me-text">
         <h2>Electricity Bill</h2>
         <h3>Click on below Button for Fetch your Bill or Input your Details.</h3>
-        <a href="bill.jsp">Show Bill</a>
-        <a href="consumer.jsp">Fill Consumer Reading</a>
+        <a style="  background-color: #f44336;color: white;padding: 14px 25px;text-align: center;text-decoration: none;display: inline-block;" href="bill.jsp">Show Bill</a>
+        <a style="  background-color: #f44336;color: white;padding: 14px 25px;text-align: center;text-decoration: none;display: inline-block;"  href="consumer.jsp">Fill Consumer Reading</a>
       </div>
     </div>
   </main>
 
-
+<%@include file="footer.jsp" %>
 
 </body>
 </html>

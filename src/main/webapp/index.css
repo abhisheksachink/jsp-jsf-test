@@ -1,10 +1,13 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+
+
 body {
   margin: 0;
   box-sizing: border-box;
 }
+
 /* CSS for header */
 .header {
   display: flex;
@@ -42,7 +45,7 @@ body {
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://singularityhub.com/wp-content/uploads/2018/03/free-endless-energy-pylon-towers-during-fiery-sunset-2278890.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,3 +183,25 @@ body {
   color: #a1a1a1;
   padding: 10px 20px;
 }
+table{
+	border:px;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
